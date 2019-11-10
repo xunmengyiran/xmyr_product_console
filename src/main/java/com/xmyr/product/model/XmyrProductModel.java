@@ -42,6 +42,10 @@ public class XmyrProductModel implements Serializable {
     @TableField("productDescribe")
     private String productDescribe;
 
+    @ApiModelProperty(value = "商品规格")
+    @TableField("specs")
+    private String specs;
+
     @ApiModelProperty(value = "类别ID")
     @TableField("categoryId")
     private Integer categoryId;
