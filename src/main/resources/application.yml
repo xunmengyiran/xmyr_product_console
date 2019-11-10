@@ -1,0 +1,22 @@
+server:
+  port: 30000
+  servlet:
+    context-path: /xmyr/
+mybatis-plus:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    jdbc-type-for-null: 'null'
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://148.70.84.199:3306/xmyr?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: zjpccq
+  logging:
+    level:
+      com.akazam.ipms.dao: debug
